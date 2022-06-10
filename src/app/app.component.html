@@ -1,5 +1,41 @@
-<h1>Fulltime force</h1>
-<button class="btn btn-danger">Dangerr</button>
+<h1>FulltimeForce Challenge</h1>
+<!-- <button class="btn btn-danger">Dangerr</button>
 <ul *ngFor="let commit of commits">
   <li>sha: {{ commit.sha }}</li>
-</ul>
+</ul> -->
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let commit of commits">
+      <div class="card" style="width: 18rem">
+        <img
+          src="data:image/png;base64,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"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 class="card-title">Message: {{ commit.commit.message }}</h5>
+          <ul>
+            <li>Sha: {{ commit.sha }}</li>
+            <li>Node_id: {{ commit.node_id }}</li>
+            <li>Comments_url: {{ commit.comments_url }}</li>
+          </ul>
+          <p>Author: {{ commit.commit.committer.name }}</p>
+          <p>Email: {{ commit.commit.committer.email }}</p>
+          <a
+            href="https://github.com/BrianJacobo"
+            class="btn btn-primary"
+            target="_blank"
+            >Go to my github profile</a
+          >
+          <hr />
+          <a
+            href="https://www.linkedin.com/in/brian-jacobo-fuentes"
+            class="btn btn-primary"
+            target="_blank"
+            >Go to my linkedin profile</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
