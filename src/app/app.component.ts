@@ -11,7 +11,7 @@ export class AppComponent {
   constructor(private commitsService: CommitsService) { }
 
   ngOnInit() {
-    this.commitsService.getCommits('man-machine')
+    (this.commitsService.getCommits('man-machine'))
       .subscribe(data => {
         console.log('data', data)
         this.commits = data;
